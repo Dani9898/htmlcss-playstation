@@ -133,20 +133,22 @@ section {
     margin-top: 20px;
 }
 
+#ecco-ps5 .item-border-bottom {
+    border-bottom: 2px solid #2d64e6;
+    padding-bottom: 30px;
+}
+
 .margin120px {
     margin-bottom: 120px;
 }
 
-.item .item-img img {
+#ecco-ps5 .item .item-img img {
     width: 100%;
 }
 
-.item span {
-    font-size: 23px !important;
+#ecco-ps5 .item span {
+    font-size: 19px !important;
 }
-
-
-
 
 
 
@@ -159,6 +161,18 @@ section {
 
 /* media query */
 
+@media all and (max-width: 991px) {
+
+    /* ecco ps5 */
+    .item span {
+        font-size: 15px !important;
+    }
+
+}
+
+
+
+
 @media all and (max-width: 767px) {
 
     /* bg games section  */
@@ -170,8 +184,6 @@ section {
     #ecco-ps5 span {
         font-size: 20px;
     }
-
-
 
 
 
