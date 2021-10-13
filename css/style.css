@@ -5,3 +5,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* debug */
+
+[class*="col"] {
+    height: 150px;
+    background: yellow;
+    border: 2px solid black;
+}
+
+section {
+    margin: 500px 0;
+}
+
+
+
+/* media query */
+
+@media all and (max-width: 767px) {
+    .on-mobile-display-none {
+        display: none;
+    }
+}
