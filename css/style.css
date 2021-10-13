@@ -6,17 +6,23 @@
     box-sizing: border-box;
 }
 
+.btn a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
 /* debug */
 
 /* [class*="col"] {
     height: 150px;
     background: yellow;
     border: 2px solid black;
-} */
+}
 
 section {
     margin: 100px 0;
-}
+} */
 
 /* main */
 
@@ -49,7 +55,7 @@ section {
     font-weight: 600;
 }
 
-.bg-games .buy-now {
+.bg-games .btn {
     width: 120px;
     padding: 10px;
     margin: 30px 0 55px 0;
@@ -57,12 +63,6 @@ section {
     background-color: #cd3d0f;
     border-radius: 28px;
 }
-
-.bg-games .buy-now a {
-    color: white;
-    text-decoration: none;
-}
-
 
 .bg-games .games {
     margin-top: 30px;
@@ -83,6 +83,70 @@ section {
 
 
 
+/* ecco ps5 */
+
+#ecco-ps5 {
+    margin: 120px auto 30px auto;
+}
+
+#ecco-ps5 .title {
+    margin-bottom: 80px;
+}
+
+#ecco-ps5 h6 {
+    color: #0072ce;
+    font-weight: 600;
+}
+
+#ecco-ps5 h2 {
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#ecco-ps5 span {
+    color: #727272;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#ecco-ps5 .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ps5-item-img {
+    width: 100%;
+}
+
+#ecco-ps5 .btn {
+    width: 200px;
+    padding: 10px;
+    margin: 30px 0 55px 0;
+    text-align: center;
+    background-color: #2d64e6;
+    border-radius: 28px;
+}
+#ecco-ps5 .item {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.margin120px {
+    margin-bottom: 120px;
+}
+
+.item .item-img img {
+    width: 100%;
+}
+
+.item span {
+    font-size: 23px !important;
+}
+
+
+
 
 
 
@@ -97,13 +161,57 @@ section {
 
 @media all and (max-width: 767px) {
 
+    /* bg games section  */
     .returnal-logo img {
         width: 70%;
     }
 
+    /* ecco ps5 */
+    #ecco-ps5 span {
+        font-size: 20px;
+    }
+
+
+
+
+
+
     .on-mobile-display-none {
         display: none;
     }
+
+
+
+}
+
+@media all and (max-width: 575px) {
+
+   /* bg games section  */
+    .returnal-logo img {
+        width: 70%;
+    }
+
+    /* ecco ps5 */
+    #ecco-ps5 .title {
+        margin-bottom: 50px;
+    }
+
+    #ecco-ps5 span {
+        font-size: 15px;
+    }
+
+    #ecco-ps5 h2 {
+        font-size: 30px;
+    }
+
+
+
+
+
+    .on-mobile-display-none {
+        display: none;
+    }
+
 
 
 }
