@@ -14,6 +14,13 @@ a {
     text-decoration: none;
 }
 
+.my-btn {
+    padding: 10px;
+    margin: 30px 0 55px 0;
+    text-align: center;
+    border-radius: 28px;
+}
+
 .my-btn a {
     color: white;
     text-decoration: none;
@@ -81,11 +88,7 @@ section {
 
 .bg-game .my-btn {
     width: 120px;
-    padding: 10px;
-    margin: 30px 0 55px 0;
-    text-align: center;
     background-color: #cd3d0f;
-    border-radius: 28px;
 }
 
 .bg-games .games {
@@ -114,7 +117,8 @@ section {
 }
 
 #ecco-ps5 .row.text-center,
-#ps4-explore .row.text-center {
+#ps4-explore .row.text-center,
+#sales .row.text-center {
     margin-bottom: 80px;
 }
 
@@ -134,7 +138,7 @@ section {
 }
 
 
-#ecco-ps5 .flex-column {
+.flex-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,15 +148,11 @@ section {
     width: 100%;
 }
 
-#ecco-ps5 .my-btn,
-#ps4-explore .my-btn {
+#ecco-ps5 .my-btn {
     width: 200px;
-    padding: 10px;
-    margin: 30px 0 55px 0;
-    text-align: center;
     background-color: #2d64e6;
-    border-radius: 28px;
 }
+
 #ecco-ps5 .item {
     text-align: center;
     margin-top: 20px;
@@ -248,11 +248,109 @@ section {
     width: 100%;
 }
 
-.small-my-btn {
-    width: 120px !important;
+#ps4-explore .my-btn {
+    width: 120px;
+    background-color: #2d64e6;
 }
 
 
+
+/* ps plus */
+
+#ps-plus {
+    background-color: #bebcbb;
+}
+
+.ps-plus-logo {
+    padding-top: 30px;
+}
+
+.ps-plus-logo img {
+    width: 60%;
+}
+
+#ps-plus .my-btn {
+    width: 220px;
+    background-color: #d9dadc;
+}
+
+#ps-plus .my-btn a {
+    color: #2d64e6;
+}
+
+#ps-plus p {
+    margin-top: 20px;
+}
+
+#plus-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* sales */
+
+#sales {
+    margin-top: 90px;
+}
+
+#sales .item {
+    margin-bottom: 60px;
+}
+
+#sales .item .item-img img {
+    width: 100%;
+}
+
+
+
+/* ps now */
+
+#ps-now {
+    background-color: #161c3b;
+    color: white;
+}
+
+
+#ps-now p {
+    margin-top: 20px;
+}
+
+
+.ps-now-logo {
+    padding-top: 30px;
+}
+
+.ps-now-logo img {
+    width: 60%;
+}
+
+#ps-now .my-btn {
+    width: 220px;
+    background-color: #f4f4f4;
+}
+
+#ps-now .my-btn a {
+    color: #000;
+}
+
+#now-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* social */
+#social-media {
+    margin-top: 90px;
+}
+
+#social-media img {
+    width: 100%;
+    margin: 60px 0;
+}
 
 
 
@@ -285,14 +383,9 @@ section {
         width: 70%;
     }
 
-    /* ecco ps5 */
-  
-
     .on-mobile-display-none {
         display: none;
     }
-
-
 
 }
 
@@ -303,6 +396,10 @@ section {
         width: 70%;
     }
 
+    /* social */
+    #social-media img {
+        margin: 30px 0;
+    }
 
     .on-mobile-display-none {
         display: none;
