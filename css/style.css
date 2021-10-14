@@ -6,11 +6,27 @@
     box-sizing: border-box;
 }
 
-.btn a {
+body {
+    font-family: arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.my-btn a {
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
+
+
+/* hover */
+
+#ecco-ps5 .item .item-img img:hover {
+    opacity: 1;
+}
+
 
 /* debug */
 
@@ -24,6 +40,11 @@ section {
     margin: 100px 0;
 } */
 
+/* fine debug */
+
+
+
+
 /* main */
 
 /* bg games section  */
@@ -34,28 +55,31 @@ section {
 
 .bg-games .bg-game {
     background-image: url("../img/jumbo-bg.png");
+    justify-content: flex-end;
+}
+
+.bg-game {
     background-position: center;
     background-size: cover;
     height: 675px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 }
 
 .returnal-logo img {
     width: 50%;
 }
 
-.bg-games .text h2 {
+.bg-game .text h2 {
     margin: 25px 0;
-    font-size: 38px;
+    font-size: 41px;
 }
 
-.bg-games .text p {
+.bg-game .text p {
     font-weight: 600;
 }
 
-.bg-games .btn {
+.bg-game .my-btn {
     width: 120px;
     padding: 10px;
     margin: 30px 0 55px 0;
@@ -86,10 +110,11 @@ section {
 /* ecco ps5 */
 
 #ecco-ps5 {
-    margin: 120px auto 30px auto;
+    margin: 120px auto 60px auto;
 }
 
-#ecco-ps5 .title {
+#ecco-ps5 .row.text-center,
+#ps4-explore .row.text-center {
     margin-bottom: 80px;
 }
 
@@ -98,17 +123,16 @@ section {
     font-weight: 600;
 }
 
-#ecco-ps5 h2 {
+.title h2 {
     font-size: 44px;
-    font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
-#ecco-ps5 span {
+.title span {
     color: #727272;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 23px;
 }
+
 
 #ecco-ps5 .flex-column {
     display: flex;
@@ -120,7 +144,8 @@ section {
     width: 100%;
 }
 
-#ecco-ps5 .btn {
+#ecco-ps5 .my-btn,
+#ps4-explore .my-btn {
     width: 200px;
     padding: 10px;
     margin: 30px 0 55px 0;
@@ -144,14 +169,88 @@ section {
 
 #ecco-ps5 .item .item-img img {
     width: 100%;
+    opacity: 0.7;
 }
 
 #ecco-ps5 .item span {
-    font-size: 19px !important;
+    font-size: 19px;
+    color: #727272;
 }
 
 
 
+
+/* it takes two */
+
+#it-takes-two {
+    color: white;
+}
+
+#it-takes-two .bg-game {
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    justify-content: space-around;
+}
+
+.it-takes-two-logo img {
+    width: 70%;
+}
+
+
+
+
+/* new releases */
+
+#new-releases {
+    background-color: #1f1f1f;
+    color: white;
+    padding-bottom: 35px;
+}
+
+#new-releases h3{
+    margin: 25px 0;
+}
+
+#new-releases h4 {
+    margin-bottom: 30px;
+}
+
+#new-releases .item-img {
+    margin-bottom: 10px;
+}
+
+#new-releases .item-img img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+#new-releases span {
+    color: white;
+}
+
+#new-releases .col {
+    margin-bottom: 50px;
+}
+
+
+
+
+/* ps4-explore */
+
+#ps4-explore {
+    margin-top: 80px;
+}
+
+#ps4-explore .title h2 {
+    margin-bottom: 19px;
+}
+
+#ps4-explore .item-img img {
+    width: 100%;
+}
+
+.small-my-btn {
+    width: 120px !important;
+}
 
 
 
@@ -164,9 +263,15 @@ section {
 @media all and (max-width: 991px) {
 
     /* ecco ps5 */
-    .item span {
-        font-size: 15px !important;
+    #ecco-ps5 .item span {
+        font-size: 15px;
     }
+
+    /* it takes two */
+    .it-takes-two-logo img {
+        width: 60%;
+    }
+
 
 }
 
@@ -181,12 +286,7 @@ section {
     }
 
     /* ecco ps5 */
-    #ecco-ps5 span {
-        font-size: 20px;
-    }
-
-
-
+  
 
     .on-mobile-display-none {
         display: none;
@@ -202,22 +302,6 @@ section {
     .returnal-logo img {
         width: 70%;
     }
-
-    /* ecco ps5 */
-    #ecco-ps5 .title {
-        margin-bottom: 50px;
-    }
-
-    #ecco-ps5 span {
-        font-size: 15px;
-    }
-
-    #ecco-ps5 h2 {
-        font-size: 30px;
-    }
-
-
-
 
 
     .on-mobile-display-none {
