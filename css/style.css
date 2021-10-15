@@ -29,7 +29,6 @@ a {
     font-size: 1.2rem;
 }
 
-
 /* hover */
 
 footer a:hover {
@@ -43,6 +42,13 @@ footer a:hover {
 header .navbar-light .navbar-nav .nav-link:hover {
     color: #0072ce;
 }
+
+header .my-dropmenu:first-child a:hover,
+header .my-dropmenu:last-child li a:hover {
+    color: #0072ce;
+}
+
+
 
 
 /* header */
@@ -62,16 +68,25 @@ header .logo-sony img {
 }
 
 header .fa-search {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 header .log-in-btn {
     background-color: #363636;
     border-radius: 30px;
+    padding: 4px;
 }
 
 header .log-in-btn a {
     color: #fff !important;
+}
+
+header .bg-light {
+    background-color: #fff !important;
+}
+
+header .navbar {
+    margin: 5px 0;
 }
 
 header .navbar-brand img {
@@ -83,13 +98,49 @@ header .navbar-light .navbar-nav .nav-link {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    font-size: 23px;
+    font-size: 1.1rem;
 }
 
+header .dropdown {
+    position: static;
+}
+header .dropdown-menu {
+    border : 0px !important;
+}
 
+header .my-dropmenu {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+header .my-dropmenu:first-child a {
+    color: #000;
+    margin: 0 30px;
+}
+
+header .my-dropmenu:last-child {
+    list-style-type: none;
+}
+
+header .my-dropmenu:last-child li {
+    margin: 0 20px;
+}
+
+header .my-dropmenu:last-child li a {
+    color: #000;
+}
+
+header .my-dropmenu:last-child li:before {
+    content: "\2022";
+    color: #0072ce;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
 
 
 
@@ -447,6 +498,25 @@ footer a {
 /* media query */
 
 @media all and (max-width: 991px) {
+
+    /* header */
+    header .log-in-btn {
+        width: 50%;
+        text-align: center;
+    }
+
+    header .search-icon {
+        border: 1px solid black;
+        margin-top: 10px;
+    }
+
+    header .fa-search {
+        margin-left: 2px;
+    }
+
+    header .my-dropmenu:first-child a {
+        margin: 0 2px;
+    }
 
     /* ecco ps5 */
     #ecco-ps5 .item span {
