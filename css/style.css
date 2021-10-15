@@ -16,10 +16,10 @@ a {
 
 
 .my-btn {
-    padding: 10px;
+    height: 50px;
     margin: 30px 0 55px 0;
-    text-align: center;
     border-radius: 28px;
+    position: relative;
 }
 
 .my-btn a {
@@ -27,9 +27,39 @@ a {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
+
 }
 
+.for-hover {
+    height: 92%;
+    width: 97%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 28px;
+}
+
+.for-hover a {
+    visibility: visible;
+}
+
+
 /* hover */
+
+.my-btn:hover {
+    cursor: pointer;
+}
+
+.my-btn:hover .for-hover {
+    visibility: visible;
+}
+
 
 footer a:hover {
     color: white;
@@ -71,14 +101,16 @@ header .fa-search {
     font-size: 25px;
 }
 
-header .log-in-btn {
+header .nav-item .my-btn {
+    width: 90px;
     background-color: #363636;
-    border-radius: 30px;
-    padding: 4px;
+    margin: 0;
 }
 
-header .log-in-btn a {
-    color: #fff !important;
+header .nav-item .my-btn .for-hover {
+    border: 1px solid #fff;
+    height: 82%;
+    width: 91%;
 }
 
 header .bg-light {
@@ -248,6 +280,11 @@ header .my-dropmenu:last-child li:before {
     background-color: #2d64e6;
 }
 
+#ecco-ps5 .my-btn .for-hover {
+    height: 87%;
+    border-color: #fff;
+}
+
 #ecco-ps5 .item {
     text-align: center;
     margin-top: 20px;
@@ -348,6 +385,10 @@ header .my-dropmenu:last-child li:before {
     background-color: #2d64e6;
 }
 
+#ps4-explore .my-btn .for-hover {
+    border-color: #fff;
+}
+
 
 
 /* ps plus */
@@ -367,6 +408,10 @@ header .my-dropmenu:last-child li:before {
 #ps-plus .my-btn {
     width: 260px;
     background-color: #d9dadc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #ps-plus .my-btn a {
