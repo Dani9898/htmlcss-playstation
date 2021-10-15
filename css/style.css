@@ -52,6 +52,7 @@ a {
 
 /* hover */
 
+/* hover generali */
 .my-btn:hover {
     cursor: pointer;
 }
@@ -60,15 +61,7 @@ a {
     visibility: visible;
 }
 
-
-footer a:hover {
-    color: white;
-}
-
-#ecco-ps5 .item .item-img img:hover {
-    opacity: 1;
-}
-
+/* hover header */
 header .navbar-light .navbar-nav .nav-link:hover {
     color: #0072ce;
 }
@@ -77,6 +70,37 @@ header .my-dropmenu:first-child a:hover,
 header .my-dropmenu:last-child li a:hover {
     color: #0072ce;
 }
+
+/* hover bg-games */
+
+.game-img img:hover,
+#new-releases .item-img img:hover {
+    transform: scale(1.1);
+}
+
+/* hover ecco ps5 */
+#ecco-ps5 .item .item-img img:hover {
+    opacity: 1;
+}
+
+/* hover footer */
+footer a:hover {
+    color: white;
+}
+
+
+
+
+/* animazioni */
+
+.game-img img,
+#new-releases .item-img img {
+    transition: transform .3s ease-in-out .1s;
+}
+
+
+
+
 
 
 
@@ -173,9 +197,6 @@ header .my-dropmenu:last-child li:before {
     width: 1em;
     margin-left: -1em;
 }
-
-
-
 
 
 
@@ -545,9 +566,18 @@ footer a {
 @media all and (max-width: 991px) {
 
     /* header */
-    header .log-in-btn {
+
+    header .dropdown-divider {
+        margin: 0;
+    }
+
+    header .nav-item .my-btn {
         width: 50%;
-        text-align: center;
+    }
+
+    header .nav-item .my-btn .for-hover {
+        height: 86%;
+        width: 97%;
     }
 
     header .search-icon {
