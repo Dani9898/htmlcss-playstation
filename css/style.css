@@ -26,6 +26,7 @@ a {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 
@@ -39,20 +40,58 @@ footer a:hover {
     opacity: 1;
 }
 
-
-/* debug */
-
-/* [class*="col"] {
-    height: 150px;
-    background: yellow;
-    border: 2px solid black;
+header .navbar-light .navbar-nav .nav-link:hover {
+    color: #0072ce;
 }
 
-section {
-    margin: 100px 0;
-} */
 
-/* fine debug */
+/* header */
+
+header {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .logo-sony {
+    text-align: end;
+}
+
+header .logo-sony img {
+    width: 120px;
+    margin: 10px;
+}
+
+header .fa-search {
+    font-size: 30px;
+}
+
+header .log-in-btn {
+    background-color: #363636;
+    border-radius: 30px;
+}
+
+header .log-in-btn a {
+    color: #fff !important;
+}
+
+header .navbar-brand img {
+    width: 70px;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 23px;
+}
+
+
+
+
+
 
 
 
@@ -92,7 +131,7 @@ section {
 }
 
 .bg-game .my-btn {
-    width: 120px;
+    width: 140px;
     background-color: #cd3d0f;
 }
 
@@ -154,7 +193,7 @@ section {
 }
 
 #ecco-ps5 .my-btn {
-    width: 200px;
+    width: 235px;
     background-color: #2d64e6;
 }
 
@@ -254,7 +293,7 @@ section {
 }
 
 #ps4-explore .my-btn {
-    width: 120px;
+    width: 145px;
     background-color: #2d64e6;
 }
 
@@ -275,7 +314,7 @@ section {
 }
 
 #ps-plus .my-btn {
-    width: 220px;
+    width: 260px;
     background-color: #d9dadc;
 }
 
@@ -332,7 +371,7 @@ section {
 }
 
 #ps-now .my-btn {
-    width: 220px;
+    width: 260px;
     background-color: #f4f4f4;
 }
 
