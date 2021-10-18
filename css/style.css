@@ -103,13 +103,16 @@ footer a:hover {
 
 
 
-
-
 /* header */
 
 header {
     background-color: #000;
     font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
 
 header .logo-sony {
@@ -141,10 +144,6 @@ header .bg-light {
     background-color: #fff !important;
 }
 
-header .navbar {
-    margin: 5px 0;
-}
-
 header .navbar-brand img {
     width: 70px;
 }
@@ -159,7 +158,8 @@ header .navbar-light .navbar-nav .nav-link {
 
 header .dropdown {
     position: static;
-}
+}   
+
 header .dropdown-menu {
     border : 0px !important;
 }
@@ -202,7 +202,12 @@ header .my-dropmenu:last-child li:before {
 
 /* main */
 
+main {
+    margin-top: 133px;
+}
+
 /* bg games section  */
+
 
 .bg-games {
     color: white;
